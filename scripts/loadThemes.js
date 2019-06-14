@@ -20,22 +20,21 @@ async function loadTheme(yamlFilePath) {
     const standardThemeYAML = await readFileRetrying(yamlFilePath);
     const standardTheme = await loadYAML(standardThemeYAML);
 
-    const softThemeYAML = getSoftThemeYAML(standardThemeYAML, standardTheme);
-    const softTheme = await loadYAML(softThemeYAML);
+    const brightThemeYAML = getBrightThemeYAML(standardThemeYAML, standardTheme);
+    const brightTheme = await loadYAML(brightThemeYAML);
 
-    return { standardTheme, softTheme };
+    return { standardTheme, brightTheme };
 }
 
-function getSoftThemeYAML(fileContent, standardTheme) {
-    const brightColors = [
-        ...standardTheme.apprentice.ansi,
-        ...standardTheme.apprentice.brightOther,
+function getBrightThemeYAML(fileContent, standardTheme) {
+    const colors = [
+        ...standardTheme.apprentice.base,
     ];
 
     return fileContent.replace(/#[0-9A-F]{6}/g, color => {
-        if (brightColors.includes(color)) {
-            return tinycolor(color)
-                .desaturate(20)
+        const idx = colors.findIndex(k => k==color)
+        if (idx >= 4 && idx <= 14) {
+            return tinycolor(colors[idx + 1])
                 .toHexString();
         }
         return color;

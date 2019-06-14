@@ -1,4 +1,4 @@
-# ![Apprentice](images/logo.png)
+# ![Apprentice](logo.png)
 
 A dark low contrast  theme for [Visual Studio Code](http://code.visualstudio.com).
 

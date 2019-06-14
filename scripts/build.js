@@ -16,13 +16,13 @@ async function build() {
         await fsp.mkdir(THEME_DIR);
     }
 
-    const { standardTheme, softTheme } = await loadThemes(THEME_YAML_FILE);
+    const { standardTheme, brightTheme } = await loadThemes(THEME_YAML_FILE);
     const standardThemePath = path.join(THEME_DIR, 'apprentice.json');
-    const softThemePath = path.join(THEME_DIR, 'apprentice-soft.json');
+    const brightThemePath = path.join(THEME_DIR, 'apprentice-bright.json');
 
     await Promise.all([
         fsp.writeFile(standardThemePath, toJSON(standardTheme)),
-        fsp.writeFile(softThemePath, toJSON(softTheme)),
+        fsp.writeFile(brightThemePath, toJSON(brightTheme)),
     ]);
 }
 

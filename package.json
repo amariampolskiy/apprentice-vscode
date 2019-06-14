@@ -13,22 +13,14 @@
 		"vscode:prepublish": "npm run build"
 	},
 	"maintainers": [
-		"Derek P Sifford <dereksifford@gmail.com>"
-	],
-	"contributors": [
-		"Krzysztof Wisznarewski",
-		"Daniel Ramos",
-		"Eric Jackson",
-		"Elliott Pogue",
-		"Ajit Singh",
-		"Teddy Bradford"
+		"Mariampolskiy Anton <amariampolskiy@gmail.com>"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/apprentice/visual-studio-code.git"
+		"url": "https://github.com/amariampolskiy/apprentice-vscode.git"
 	},
 	"bugs": {
-		"url": "https://github.com/apprentice/visual-studio-code/issues"
+		"url": "https://github.com/amariampolskiy/apprentice-vscode/issues"
 	},
 	"engines": {
 		"vscode": "^1.13.0"
@@ -42,6 +34,7 @@
 		"theme",
 		"color-theme"
 	],
+	"icon": "logo.png",
 	"galleryBanner": {
 		"color": "#3c4557",
 		"theme": "dark"
@@ -54,9 +47,9 @@
 				"path": "./theme/apprentice.json"
 			},
 			{
-				"label": "Apprentice Soft",
+				"label": "Apprentice Bright",
 				"uiTheme": "vs-dark",
-				"path": "./theme/apprentice-soft.json"
+				"path": "./theme/apprentice-bright.json"
 			}
 		]
 	},
