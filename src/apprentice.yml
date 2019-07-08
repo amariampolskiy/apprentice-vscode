@@ -605,7 +605,7 @@ tokenColors:
     - comment.block.documentation keyword
     - comment.block.documentation storage.type.class
     settings:
-      foreground: *PURPLE
+      foreground: *BLUE
 
   - name: JSDoc-style types
     scope:
@@ -874,7 +874,7 @@ tokenColors:
     - source.groovy storage.type.def
     settings:
       fontStyle: regular
-      foreground: *PURPLE
+      foreground: *BLUE
 
   - name: Types
     scope:
