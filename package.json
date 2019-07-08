@@ -1,6 +1,6 @@
 {
 	"name": "theme-apprentice",
-	"version": "2.18.0",
+	"version": "1.0.2",
 	"displayName": "Apprentice",
 	"description": "Apprentice Theme. A dark low contrast theme.",
 	"publisher": "apprentice-theme",
@@ -34,9 +34,9 @@
 		"theme",
 		"color-theme"
 	],
-	"icon": "logo.png",
+	"icon": "logo-white.png",
 	"galleryBanner": {
-		"color": "#3c4557",
+		"color": "#bcbcbc",
 		"theme": "dark"
 	},
 	"contributes": {
@@ -57,10 +57,5 @@
 		"js-yaml": "^3.13.1",
 		"prettier": "^1.17.0",
 		"tinycolor2": "^1.4.1"
-	},
-	"__metadata": {
-		"id": "4e44877c-1c8d-4f9c-ba86-1372d0fbeeb1",
-		"publisherDisplayName": "Apprentice Theme",
-		"publisherId": "fbb3d024-f8f2-460c-bdb5-99552f6d8c4b"
 	}
 }

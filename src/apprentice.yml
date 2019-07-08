@@ -576,7 +576,7 @@ tokenColors:
     - variable.other.readwrite.instance.ruby                # ruby's "@" instance symbol
     - variable.parameter.function.language.special          # Special words as parameters
     settings:
-      foreground: *PURPLE
+      foreground: *BLUE
       fontStyle: italic
 
   - name: Inherited classes
@@ -654,13 +654,13 @@ tokenColors:
     scope:
     - entity.name.tag
     settings:
-      foreground: *PURPLE
+      foreground: *BLUE
 
   - name: CSS attribute parent selectors ('&')
     scope:
     - entity.other.attribute-name.parent-selector
     settings:
-      foreground: *PURPLE
+      foreground: *BLUE
 
   - name: HTML/CSS attribute names
     scope:
@@ -913,7 +913,7 @@ tokenColors:
     scope:
     - storage.modifier
     settings:
-      foreground: *PURPLE
+      foreground: *BLUE
 
 # =============================================================================
 # RegExp
@@ -932,7 +932,7 @@ tokenColors:
     # NOTE: The scope name is a misnomer. It is actually non-capture operators
     - punctuation.definition.group.capture.regexp
     settings:
-      foreground: *PURPLE
+      foreground: *BLUE
 
   - name: RegExp start and end characters
     scope:
