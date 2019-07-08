@@ -1,4 +1,4 @@
 node_modules
-theme
+theme*
 src/tests
 bin
