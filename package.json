@@ -1,9 +1,9 @@
 {
 	"name": "theme-apprentice",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"displayName": "Apprentice",
 	"description": "Apprentice Theme. A dark low contrast theme.",
-	"publisher": "apprentice-theme",
+	"publisher": "amariampolskiy",
 	"license": "MIT",
 	"scripts": {
 		"dev": "node ./scripts/dev.js",
@@ -36,7 +36,7 @@
 	],
 	"icon": "logo-white.png",
 	"galleryBanner": {
-		"color": "#bcbcbc",
+		"color": "#262626",
 		"theme": "dark"
 	},
 	"contributes": {
